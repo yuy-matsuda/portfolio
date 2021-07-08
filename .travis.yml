@@ -20,7 +20,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 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  # セキュアとマークされたアクセストークンを travis-ci.org のダッシュボードに設定してください。https://docs.travis-ci.com/user/deployment/pages/#Setting-the-GitHub-token
+  github-token: $GITHUB_ACCESS_TOKEN = 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 
   target-branch: gh-pages
   local-dir: dist
   on:
